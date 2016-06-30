@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lesson 11 - Form Validation and other Future HTML5 Form Enhancements</title>
+  <style type="text/css" media="all">
+    span {
+      width: 175px;
+      display:block;
+      float:left;
+    }
+    input {
+      float:left;
+    }
+    p {
+      padding-top:10px;
+      clear: all;
+    }
+    h2 {
+      padding-top:20px;
+      clear: all;
+    }
+    label {
+      padding-right:20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Creating Forms</h1>
+
+<form method="POST" action="form.aspx">
+
+<h1>Email</h1>
+
+<label for="email">
+  <span>Email Input: </span>
+ <input type="email" type="email" name="email" required>
+</label>
+<h1>Telephone</h1>
+<p>
+  <label for="">
+    <span>
+      Telephone Input
+    </span>
+    <input type="tel" name="telInout" name="telInput" required>
+  </label>
+</p>
+<h1>Input Url</h1>
+<p>
+  <label for="">
+    <span>
+      Enter Url
+    </span>
+    <input type="url" name="inputUrl" required>
+  </label>
+</p>
+<h1>Number</h1>
+<p>
+  <label for="">
+    <span>
+      Enter number
+    </span>
+    <input type="number" name="numberInput" required>
+  </label>
+</p>
+<h1>Range Input</h1>
+<p>
+  <label for="">
+    <span>
+      Range Input
+    </span>
+    <input type="range" name="rangeInput" value="42" required>
+  </label>
+</p>
+<h1>Data list</h1>
+<p>
+  <label for="">
+    <span>
+      Data List
+    </span>
+    <input type="text"  list="somelist" name="somelist">
+   <datalist id="somelist">
+     <option value="First Value" label="first"></option>
+     <option value="Second Value" label="second"></option>
+     <option value="Third Value" label="third"></option>
+   </datalist>
+  </label>
+</p>
+<h1>Data list</h1>
+<p>
+  <label for="">
+    <span>
+     Auto Focus
+    </span>
+    <input type="text"  name="autoFocus" autofocus>
+  </label>
+</p>
+
+<h1>Pattern</h1>
+<p>
+  <label for="">
+    <span>
+     Pattern
+    </span>
+    <input type="text"  pattern="\d{5}(-\d{4})?$}" autofocus>
+  </label>
+</p>
+
+
+
+
+
+
+
+
+<p><button>Submit</button></p>
+
+</form>
+
+</body>
+</html>

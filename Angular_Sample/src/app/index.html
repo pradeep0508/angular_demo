@@ -1,0 +1,32 @@
+<!<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Angular with Webpack</title>
+    <style>
+        .jumbotron {
+            background-color: #2E2D88 color: white
+        }
+    </style>
+</head>
+
+
+
+<body ng-app="myApp">
+    <div ui-view="header"></div>
+    <div class="container">
+        <div ui-view="layout"></div>
+    </div>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.css">
+</body>
+
+</html>

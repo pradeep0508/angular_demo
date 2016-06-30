@@ -1,0 +1,19 @@
+<div ng-controller="CalculatorCtrl">
+    <div>
+        Enter a number:
+
+        <div class="form-group" ng-class="{'has-error':calcVM.isNumberInValid}">
+            <input type="number" name="inputNumber" ng-model="calcVM.inputNumber" ng-required="true" required ng-keyup="calcVM.onNumberKeyUp($event)"
+                class="form-control" placeholder="Only numberic number"/>
+            <p ng-show="calcVM.isNumberInValid" class="help-block">Username is too short.</p>
+        </div>
+
+        <div>
+            <button type="button" ng-click="calcVM.doSquare()" class="btn btn-default">X<sup>2</sup></button>
+            <button type="button" ng-click="calcVM.doCube()" class="btn btn-default">X<sup>3</sup></button>
+        </div>
+
+        <div>Answer: {{calcVM.answer}}</div>
+
+    </div>
+</div>

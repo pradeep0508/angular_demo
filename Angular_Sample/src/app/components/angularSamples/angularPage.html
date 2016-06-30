@@ -1,0 +1,12 @@
+<div>
+  <div class="list-group" ng-repeat="module in angularVM.modules">
+    <button type="button" class="btn btn-info"> <a ui-sref={{module.appState}} > {{module.statePage}}</a></button>
+  </div>
+  
+  <button type="button" class="btn btn-info" ng-click="angularVM.validateObject()">Check unDefined</button>
+  <button type="button" class="btn btn-info" ng-click="angularVM.validateFunction()">Check isFunction</button>
+  <br>
+  <button type="button" class="btn btn-info" ng-click="angularVM.showResolveValue()">Show resolve value</button>
+  <button type="button" class="btn btn-info" ng-click="angularVM.showResolveCustomValue()">Show resolve custom value</button>
+
+</div>

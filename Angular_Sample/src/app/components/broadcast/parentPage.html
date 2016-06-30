@@ -1,0 +1,19 @@
+<div style="background-color: lightgreen;">
+    <span class="text-success">Parent contrller view</span><br>
+    Father name:
+    <input type="text" name="fathername" ng-model="parentVM.fatherName" class="form-control" placeholder="Enter you father name">
+    <br> Mother name:
+    <input type="text" name="fathername" ng-model="parentVM.motherName" class="form-control" placeholder="Enter you mother name">
+    <br>
+    <button type="submit" ng-click="parentVM.passParentInfo()" value="info" class="btn-primary btn-sm">Pass parent info to child controller</button>
+    <br>
+    Child Name: {{parentVM.childName}}
+<br>
+    <div ui-view="secondchild">
+        <h1>ui-view second child</h1>
+    </div>
+    <br>
+    <br>
+    <first-Child done='parentVM.childName(childranName)'></first-Child>
+</div>
+

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lesson 10 - Creating Forms</title>
+</head>
+
+<body>
+
+  <h1>Creating Forms</h1>
+
+  <form method="POST" action="form.aspx">
+    <p>
+      <label for="customerName">Customer name: </label>
+      <input type="text" id="customerName" name="customerName" maxlength="10" placeholder="Your name"></input>
+    </p>
+    <br>
+    <fieldset>
+      <legend>Pizza size</legend>
+      <p>
+        <label for="size">
+          <input type="radio" name="size" value="small" checked>Small</label>
+        </label>
+      </p>
+      <p>
+        <label for="size">
+          <input type="radio" name="size" value="medium">Medium</label>
+        </label>
+      </p>
+      <p>
+        <label for="size">
+          <input type="radio" name="size" value="large">Large</label>
+        </label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Pizza toppings</legend>
+      <p>
+        <label for="toppings">
+            <input type="checkbox" name="toppings" value="bacon">Bacon
+          </label>
+      </p>
+      <p>
+        <label for="toppings">
+            <input type="checkbox" name="toppings" value="cheese" checked>Extra cheese
+          </label>
+      </p>
+      <p>
+        <label for="toppings">
+            <input type="checkbox" name="toppings" value="onion">Onion
+          </label>
+      </p>
+      <p>
+        <label for="toppings">
+            <input type="checkbox" name="toppings" value="mushroom">Mushroom
+          </label>
+      </p>
+    </fieldset>
+
+
+    <p>Crush
+      <select name="crust" multiple>
+        <option value="c1">Normal</option>
+        <option value="c2" selected>Chicago Deep Dish</option>
+        <option value="c3">New York Thin</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="">Develivery Instructions</label>
+      <textarea name="comments" id="comments" cols="30" rows="10">How do we get to your address</textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="continue to Step 2">
+    </p>
+    <p>
+      <input type="reset" value="Reset">
+    </p>
+  </form>
+</body>
+
+</html>

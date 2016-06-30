@@ -1,0 +1,103 @@
+﻿ h1{
+     font-family: Arial, Helvetica, sans-serif;
+     color: purple
+ }
+
+ .important{
+     color: red;
+ }
+
+ #somesuch{
+     color: blue;
+ }
+
+ span.important{
+     color: darkred;
+ }
+
+ h1,h2,h3,p.important{
+     margin-left: 50px;
+ }
+
+ a:visited{
+     color: darkgreen;
+ }
+ 
+ a:hover {
+     text-decoration: underline;
+ }
+
+ p:first-letter{
+     font-size: 3em;
+ }
+
+ 
+ article:before{
+     content: '**************';
+     /*content:url('http://www.google.com');*/
+ }
+
+p:first-of-type{
+    margin-right: 200px;
+
+}
+ a:link {
+     text-decoration: none;
+     color: greenyellow;
+ }
+
+ li:first-child{
+     font-style: italic;
+ }
+
+ li:last-child{
+     font-weight: bold;
+ }
+
+ li:nth-of-type(3){
+     text-decoration: underline;
+ }
+
+ span[title]{
+     color: black;
+ }
+
+ span[title='first idea']{
+     text-decoration: line-through;
+ }
+
+ a[href^="email"]{
+     font-size: 2em;
+ }
+
+ span[title$="idea"]{
+     text-decoration: overline;
+ }
+
+ /*
+
+ css - selectors
+
+aritcle span{ -- descendant }
+
+a*b -- universal, 
+
+
+!important
+
+h1{
+    color:red!important;
+}
+
+cascading order of precedence high - low
+
+User
+Inline
+Media
+!important
+specific
+Order
+inherited from Parent
+Browser default
+
+ */

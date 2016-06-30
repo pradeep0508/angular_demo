@@ -1,0 +1,10 @@
+<div class="row">
+  <div ng-repeat="movie in moviesVM.MoviesList.Search">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img ng-src={{movie.Poster}} alt="Poster" width="200" height="300"/>
+      <p>{{movie.Title}}<p>
+      <p>Type: {{movie.Type}}<p>
+      <p>Year: {{movie.Year}}<p>
+    </div>
+  </div>
+</div>
