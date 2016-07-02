@@ -11,16 +11,17 @@ const app=document.getElementById('app');
 ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={Layout}>
-			<IndexRoute 
-				component={About}>
-			</IndexRoute>
-			<Route path="about" 
-				component={About}>
-			</Route>
-			<Route path="weatherReport" 
-					component={WeatherReport}>
-			</Route>
+			
 		</Route>
 	</Router>,app
 	);
 
+// <IndexRoute 
+// 				component={About}>
+// 			</IndexRoute>
+// 			<Route path="about" 
+// 				component={About}>
+// 			</Route>
+// 			<Route path="weatherReport" 
+// 					component={WeatherReport}>
+// 			</Route>

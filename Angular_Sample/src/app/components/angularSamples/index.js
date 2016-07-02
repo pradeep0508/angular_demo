@@ -7,5 +7,7 @@ module.exports=function(angular) {
   require('./angularConfig')(ngModule,angular);
   require('./angularController')(ngModule,angular);
   require('./resolveSample')(ngModule,angular);
+  require('./components/lodash')(ngModule,angular);
+
   
 }

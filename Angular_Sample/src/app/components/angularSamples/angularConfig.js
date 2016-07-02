@@ -31,6 +31,22 @@ module.exports = function (ngmodule, angular) {
                 }
             }
 
+        }).state('myApp.table', {
+            url: "/table",
+            views: {
+                'layout@': {
+                    templateUrl: './components/angularSamples/components/tablePage.html',
+                }
+            }
+        }).state('myApp.lodash', {
+            url: "/lodash",
+            views: {
+                'layout@': {
+                    templateUrl: './components/angularSamples/components/lodash/lodashPage.html',
+                    controller: 'lodashCtrl',
+                    controllerAs: 'lodashVM'
+                }
+            }
         });
     }]);
 

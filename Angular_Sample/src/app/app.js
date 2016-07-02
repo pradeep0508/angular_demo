@@ -1,5 +1,6 @@
 require('angular');
 require('angular-ui-router');
+require('lodash');
 
 
 require('./components/home')(angular);
