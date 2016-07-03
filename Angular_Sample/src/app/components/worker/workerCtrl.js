@@ -1,12 +1,11 @@
 module.exports = function (ngModule, angular) {
 
-    ngModule.controller("workerCtrl", function ($scope, CalculatorService) {
-        $scope.doSquare = function () {
-            $scope.answer = CalculatorService.square($scope.number);
-        }
+    ngModule.controller('workerCtrl', ['$scope',workerController]);
 
-        $scope.doCube = function () {
-            $scope.answer = CalculatorService.cube($scope.number);
-        }
-    });
+    function workerController($scope) {
+        var workerVM = this;
+        
+
+    }
+
 }

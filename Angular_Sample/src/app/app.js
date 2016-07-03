@@ -2,7 +2,6 @@ require('angular');
 require('angular-ui-router');
 require('lodash');
 
-
 require('./components/home')(angular);
 require('./components/calculator')(angular);
 require('./components/worker')(angular);
@@ -25,6 +24,9 @@ var myApp = angular.module("myApp",
         'angularModule'
     ]);
 
+
 require('./appConfig')(myApp);
 require('./shared/services/MathService')(myApp)
 require('./shared/services/restService')(myApp)
+require('./angular.interceptor')(myApp);
+

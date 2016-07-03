@@ -1,3 +1,6 @@
-<div class="list-group" ng-repeat="module in homeVM.modules">
-  <button type="button" class="btn btn-info"> <a ui-sref={{module.appState}} > {{module.statePage}}</a></button>
+<div>
+  <ol class="list-inline" ng-repeat="module in homeVM.modules">
+    <li><a ui-sref={{module.appState}}>{{module.statePage}}</a></li>
+  </ol>
+  <!--<button type="button" class="btn btn-info"> <a ui-sref={{module.appState}} > {{module.statePage}}</a></button>-->
 </div>

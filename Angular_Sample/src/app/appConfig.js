@@ -1,9 +1,15 @@
 module.exports = function (myApp) {
 
+    
+
     myApp.config([
         '$stateProvider',
         '$urlRouterProvider',
-        function ($stateProvider, $urlRouterProvider) {
+        '$httpProvider',
+        function ($stateProvider, $urlRouterProvider,$httpProvider) {
+
+            $httpProvider.interceptors.push('httpInterceptor');
+
             $stateProvider.state('myApp', {
                 url: '',
                 views: {

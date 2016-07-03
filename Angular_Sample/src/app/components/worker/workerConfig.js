@@ -8,9 +8,10 @@ module.exports = (function (ngModule) {
             $stateProvider.state("myApp.worker", {
                 url: "/worker",
                 view: {
-                    'home@': {
+                    'layout@': {
                         templateUrl: "./components/Worker/workerPage.html",
-                        controller: "workerConfig"
+                        controller: "workerCtrl",
+                        contrllerAs: 'workerVM'
                     }
                 }
 
