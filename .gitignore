@@ -1,0 +1,6 @@
+.tgitconfig
+angular_sample/.vscode
+angular_sample/dist
+Angular_Sample/node_modules/
+React_Sample/.vscode
+React_Sample/node_modules
