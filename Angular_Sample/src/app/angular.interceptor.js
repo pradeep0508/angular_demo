@@ -14,7 +14,7 @@ module.exports = function (ngModule) {
                 //you can modify your response here
                 //config.headers['x-session-token'] = SessionService.token;
                 config.requestTimestamp = new Date().getTime();
-                console.log('Interceptor: request ==>' + config);
+                //console.log('Interceptor: request ==>' + config);
                 return config;
             },
             response: function (response) {
@@ -22,13 +22,13 @@ module.exports = function (ngModule) {
                 //var deferred = $q.defer();
                 response.config.responseTimestamp = new Date().getTime();
                 //deferred.resolve(response);
-                console.log('Interceptor: response ==>' + JSON.stringify(response));
+                //console.log('Interceptor: response ==>' + JSON.stringify(response));
                 //return deferred.promise;
                 return response;
             },
             responseError: function (response) {
                 //you can decorate your error response
-                console.log('Interceptor: responseError ==>' + response);
+                //console.log('Interceptor: responseError ==>' + response);
                 return response;
             }
         }

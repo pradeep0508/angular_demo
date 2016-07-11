@@ -35,7 +35,9 @@ module.exports = function (ngmodule, angular) {
             url: "/table",
             views: {
                 'layout@': {
-                    templateUrl: './components/angularSamples/components/tablePage.html',
+                    templateUrl: './components/angularSamples/tableSample/tablePage.html',
+                    controller:'tableCtrl',
+                    controllerAs:'tableVM'
                 }
             }
         }).state('myApp.lodash', {

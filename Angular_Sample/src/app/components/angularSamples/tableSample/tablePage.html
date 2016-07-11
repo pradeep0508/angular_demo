@@ -1,0 +1,82 @@
+<div class="clearfix">
+    Enter you name:
+    <div class="form-group" ng-class="{'has-error':tableVM.isNameInValid }">
+        <input type="text" ng-model="tableVM.name" id="txtName" ng-required="true"
+         required ng-keyup="tableVM.onKeyUp($event)" class="form-control" placeholder="Enter you name">
+         <p ng-show="tableVM.isNameInValid" class="help-block">Enter you name</p>
+    </div>
+     Enter you Company:
+     
+    <div class="form-group" ng-class="{'has-error':tableVM.isCompanyInValid }">
+        <input type="text" ng-model="tableVM.company" id="txtCompany" ng-required="true" 
+        required ng-keyup="tableVM.onKeyUp($event)" class="form-control" placeholder="Enter your company"><br><br>
+        <p ng-show="tableVM.isCompanyInValid" class="help-block">Enter you company name</p>
+    </div>
+    
+    <button type="button" class="btn btn-large btn-block btn-default" ng-click="tableVM.pushReportData()">Add</button>
+    
+
+    <table class="table report-table-bodered">
+    <br>
+    <tbody>
+        <tr ng-repeat="item in tableVM.reportData" ng-click="tableVM.reportItemClick(item)">
+        <td>{{$index + 1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.company}}</td>
+    </tr>
+    </tbody>
+</table>
+
+   
+</div> 
+
+
+<!--<table class="table table-bordered">
+
+    <thead>
+        <th>Season</th>
+        <th>Goals</th>
+        <th>Assists</th>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <th>2009-2010</th>
+            <th>25</th>
+            <th>43</th>
+        </tr>
+
+        <tr>
+            <th>2010-2011</th>
+            <th>25</th>
+            <th>43</th>
+        </tr>
+
+        <tr>
+            <td colspan="3">2011-2012 - also played for canada at olympics</td>
+        </tr>
+
+        <tr>
+            <th>2011-2012</th>
+            <th>25</th>
+            <th>43</th>
+        </tr>
+
+        <tr>
+            <th>2013-2014</th>
+            <th>25</th>
+            <th>43</th>
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Totals</td>
+            <td>86</td>
+            <td>113</td>
+        </tr>
+    </tfoot>
+
+</table>-->

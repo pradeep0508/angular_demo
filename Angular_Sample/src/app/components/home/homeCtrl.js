@@ -1,8 +1,8 @@
 module.exports = function (ngModule, angular) {
 
-    ngModule.controller('homeCtrl', ['$scope',homeController]);
+    ngModule.controller('homeCtrl', [homeController]);
 
-    function homeController($scope) {
+    function homeController() {
         
         var homeVM=this;
         

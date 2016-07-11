@@ -8,6 +8,7 @@ module.exports=function(angular) {
   require('./angularController')(ngModule,angular);
   require('./resolveSample')(ngModule,angular);
   require('./components/lodash')(ngModule,angular);
+  require('./tableSample')(ngModule,angular);
 
   
 }

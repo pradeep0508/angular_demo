@@ -10,6 +10,8 @@ require('./components/directiveSample')(angular);
 require('./components/bootstrap')(angular);
 require('./components/broadcast')(angular);
 require('./components/angularSamples')(angular);
+require('./components/spinner')(angular);
+require('./components/popupDialog')(angular);
 
 var myApp = angular.module("myApp",
     [
@@ -21,7 +23,9 @@ var myApp = angular.module("myApp",
         'directiveModule',
         'familyModule',
         'bootstrapModule',
-        'angularModule'
+        'angularModule',
+        'spinnerModule',
+        'popupModule'
     ]);
 
 

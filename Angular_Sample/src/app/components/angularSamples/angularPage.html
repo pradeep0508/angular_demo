@@ -2,7 +2,7 @@
   <div class="list-group" ng-repeat="module in angularVM.modules">
     <button type="button" class="btn btn-info"> <a ui-sref={{module.appState}} > {{module.statePage}}</a></button>
   </div>
-  
+  <popup-Dialog></popup-Dialog>
 
   <button type="button" value="info" ng-click="angularVM.validateObject()" class="btn-link btn-lg">Check unDefined</button><br>
   <button type="button" value="info" ng-click="angularVM.validateFunction()" class="btn-link btn-lg">Check isFunction</button><br>
@@ -10,5 +10,6 @@
   <button type="button" value="info" ng-click="angularVM.showResolveCustomValue()" class="btn-link btn-lg">Show resolve custom value</button><br>
   <button type="button" value="info" ng-click="angularVM.navigateToTable()" class="btn-link btn-lg">Table view</button><br>
   <button type="button" value="info" ng-click="angularVM.navigateToLodash()" class="btn-link btn-lg">Lodash Samples</button><br>
-
+  <button type="button" value="info" ng-click="angularVM.loadPopupDialog()" class="btn-link btn-lg">load popup Dialog Samples</button><br>
+  
 </div>

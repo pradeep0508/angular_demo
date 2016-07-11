@@ -26,6 +26,11 @@ module.exports = function (ngModule, angular) {
             },
             navigateToLodash() {
                 $state.go('myApp.lodash', {});
+            },
+            loadPopupDialog() {
+                console.log('calling emit function');
+                var params;
+                $scope.$emit('showPopup', params)
             }
 
         });

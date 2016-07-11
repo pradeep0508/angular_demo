@@ -3,7 +3,8 @@
         Enter a number:
 
         <div class="form-group" ng-class="{'has-error':calcVM.isNumberInValid}">
-            <input type="number" name="inputNumber" ng-model="calcVM.inputNumber" ng-required="true" required ng-keyup="calcVM.onNumberKeyUp($event)"
+            <input type="number" name="inputNumber" ng-model="calcVM.inputNumber" ng-required="true" 
+            required ng-keyup="calcVM.onNumberKeyUp($event)"
                 class="form-control" placeholder="Only numberic number"/>
             <p ng-show="calcVM.isNumberInValid" class="help-block">Username is too short.</p>
         </div>
@@ -16,4 +17,5 @@
         <div>Answer: {{calcVM.answer}}</div>
 
     </div>
+    <spinner></spinner>
 </div>

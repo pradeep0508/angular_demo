@@ -12,5 +12,6 @@ module.exports = function(ngModule, angular) {
             alert(funcLevel + ' defer function');
         });
         defer.resolve('first');
+        
     }
 }
