@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Layout from "./components/Layout";
 import { Router, Route, IndexRoute, hashHistory} from "react-router";
-import About from "./pages/About";
-import PhoneBook from "./pages/PhoneBook";
-import WeatherReport from "./pages/WeatherReport";
+// import About from "./pages/About";
+// import PhoneBook from "./pages/PhoneBook";
+//import WeatherReport from "./pages/WeatherReport";
 
 const app=document.getElementById('app');
 

@@ -60,9 +60,23 @@ export default class Layout extends React.Component{
 		});
 	}
 	render(){
-		var movies=_.map(this.state.movies,(movie)=>{
-					return <li key={movie.imdbID}><h1>{movie.Title}</h1></li>
-				});
+		// var movies=_.map(this.state.movies,(movie)=>{
+		// 			return <li key={movie.imdbID}><h1>{movie.Title}</h1></li>
+		// 		});
+
+		var movies = _.map(this.state.movies, (movie) => {
+			return <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				<div class="thumnail">
+					<img src={movie.Poster} width="300" />
+					<div class="caption">
+						<h3>{movie.Title}</h3>
+						<p>{movie.Type}-{movie.Year}</p>
+						<p><a href="" class="btn btn-primary" role="button">Add to cart</a></p>
+					</div>
+				</div>
+			</div>
+		});
+
 		return (
 			<div  className="">
 				<input 	type="text" 
@@ -71,9 +85,9 @@ export default class Layout extends React.Component{
 						onChange={(e)=>{this.searchMovies();}}/>
 						
 				<button id="btnHitMe" 
-						onClick={(e)=> {this.fetchMovieListFromServer(this.state.movieName)}} >Hit Me!!
+						onClick={(e)=> {this.fetchMovieListFromServer(this.state.movieName)}} >Fetch Movies!!
 						</button>
-				<ul> {movies}</ul>
+				 <div class="row">{movies}</div>
 				
 			</div>
 			);
