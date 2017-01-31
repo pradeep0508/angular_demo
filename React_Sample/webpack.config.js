@@ -5,7 +5,19 @@ var path = require('path');
 module.exports = {
   context: path.join(__dirname, "src"),
   devtool: debug ? "inline-sourcemap" : null,
-  entry: "./js/client.js",
+  entry: "./app.jsx",
+  resolve: {
+    root: __dirname,
+    alias: {
+      Greeter: '../../reactComponent/reactComponent.jsx',
+      ReduxStore: '../../reactComponent/store/store.jsx',
+      AngularCtrl: './angularPage/angularCtrl.jsx',
+      ReactCtrl: './reactPage/reactCtrl.jsx',
+      angularModule: '../app.jsx',
+      Action: '../../reactComponent/actions/actions.jsx',
+      Reducers: '../reducers/reducers.jsx'
+    }
+  },
   module: {
     loaders: [
       {

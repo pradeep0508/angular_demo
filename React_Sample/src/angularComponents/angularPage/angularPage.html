@@ -1,0 +1,6 @@
+<div style="background-color: lightpink;border-style: solid;border-color: red;padding: 50px">
+    <h1>This is Angular Page</h1>
+    <h5>State value from redux Store:<span>{{angularVM.reduxStoreValue}}</span></h5>
+    <input type="text" ng-model="angularVM.InputValue"/>
+    <input type="button" ng-click="angularVM.sendInputToReactComp()" value="Send to Redux store" />
+</div>
