@@ -1,9 +1,19 @@
+body {
+    background-color: yellow;
+}
 
+h1{
+    color: red;
+}
 
 .report-table-bodered td, th {
     border: 1px solid lightgray;
     border-collapse: collapse;
     padding: 5px;
+}
+
+.bottom-margin  {
+    margin-bottom: 15px;
 }
 
 table tr:nth-child(odd){

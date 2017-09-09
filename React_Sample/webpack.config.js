@@ -5,16 +5,14 @@ var path = require('path');
 module.exports = {
   context: path.join(__dirname, "src"),
   devtool: debug ? "inline-sourcemap" : null,
-  entry: "./app.jsx",
+  entry: ['babel-polyfill',"./app.jsx"],
   resolve: {
     root: __dirname,
     alias: {
-      Greeter: '../../reactComponent/reactComponent.jsx',
-      ReduxStore: '../../reactComponent/store/store.jsx',
-      AngularCtrl: './angularPage/angularCtrl.jsx',
+      Greeter: './component/reactComponent.jsx',
+      ReduxStore: './component/store/store.jsx',
       ReactCtrl: './reactPage/reactCtrl.jsx',
-      angularModule: '../app.jsx',
-      Action: '../../reactComponent/actions/actions.jsx',
+      Action: './component/actions/actions.jsx',
       Reducers: '../reducers/reducers.jsx'
     }
   },

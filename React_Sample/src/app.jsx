@@ -1,9 +1,15 @@
 
-import angular from 'angular';
-import uirouter from 'angular-ui-router';
 
-var myApp = angular.module('myApp', ['ui.router']);
+import React from "react";
+import ReactDOM from "react-dom";
+import { store } from 'ReduxStore'
+import Greeter from "Greeter";
+var {Provider} = require('react-redux');
 
-require('./appConfig.jsx')(myApp);
-require('./angularComponents/angularPage/angularCtrl.jsx')(myApp);
-require('./angularComponents/reactPage/reactCtrl.jsx')(myApp);
+
+
+ReactDOM.render(
+            <Provider store={store}>
+                <Greeter />
+            </Provider>, document.getElementById('reactPage')
+        );
